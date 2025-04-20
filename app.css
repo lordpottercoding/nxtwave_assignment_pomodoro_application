@@ -1,3 +1,4 @@
+/* General styles */
 h1, #timer-display {
     text-align: center;
     font-size: 50px;
@@ -8,8 +9,12 @@ h1, #timer-display {
 
 button {
     color: white;
-    padding: 5px;
+    padding: 10px 20px;
     border-radius: 5px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
 }
 
 #start-btn {
@@ -22,6 +27,7 @@ button {
 
 #reset-btn {
     background-color: rgb(236, 230, 230);
+    color: black;
 }
 
 #short-break-btn {
@@ -30,4 +36,57 @@ button {
 
 #long-break-btn {
     background-color: rgb(224, 50, 175);
+}
+
+/* Timer container */
+.timer-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Controls and mode selection */
+.controls, .mode-selection {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    #timer-display {
+        font-size: 40px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    #timer-display {
+        font-size: 30px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .timer-container {
+        padding: 15px;
+    }
 }
