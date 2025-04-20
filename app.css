@@ -1,0 +1,33 @@
+h1, #timer-display {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    color: black;
+    font-weight: 200;
+}
+
+button {
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#start-btn {
+    background-color: rgb(35, 240, 35);
+}
+
+#stop-btn {
+    background-color: rgb(250, 75, 75);
+}
+
+#reset-btn {
+    background-color: rgb(236, 230, 230);
+}
+
+#short-break-btn {
+    background-color: rgb(11, 228, 240);
+}
+
+#long-break-btn {
+    background-color: rgb(224, 50, 175);
+}
