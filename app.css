@@ -15,6 +15,11 @@ button {
     margin: 5px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 #start-btn {
@@ -40,23 +45,53 @@ button {
 
 /* Timer container */
 .timer-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 /* Controls and mode selection */
 .controls, .mode-selection {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
-/* Responsive styles */
+.controls button, .mode-selection button {
+    flex: 1;
+    margin: 0 10px;
+}
+
+/* Desktop-specific styles */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    #timer-display {
+        font-size: 60px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+
+    .timer-container {
+        max-width: 700px;
+        padding: 40px;
+    }
+
+    .controls, .mode-selection {
+        justify-content: space-evenly;
+    }
+}
+
+/* Responsive styles for medium devices */
 @media (max-width: 768px) {
     h1 {
         font-size: 40px;
@@ -72,6 +107,7 @@ button {
     }
 }
 
+/* Responsive styles for small devices */
 @media (max-width: 480px) {
     h1 {
         font-size: 30px;
